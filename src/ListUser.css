@@ -1,0 +1,167 @@
+.list-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #2d2d44;
+    border-radius: 12px;
+    background-color: #1e1e2f;
+    color: #f0f0f5;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc00;
+}
+.list-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.error {
+    color: #ff7e5f;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #2d2d44;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    color: #f0f0f5;
+}
+
+.user-table th {
+    background-color: #3a3a5a;
+    color: #ffcc00;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.user-table td {
+    color: #f0f0f5;
+    border-bottom: 1px solid #444;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.user-table tr:hover {
+    background-color: #3a3a5a;
+    transition: background-color 0.3s ease;
+}
+
+.user-table tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table td svg {
+    fill: #ffcc00;
+    width: 28px;
+    height: 28px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, fill 0.3s ease;
+}
+
+.user-table td svg:hover {
+    transform: scale(1.1);
+    fill: #ff6600; 
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #f0f0f5;
+}
+
+.modal-content h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the heading and SVG */
+  color: #ffcc00;
+  margin-bottom: 20px;
+  gap: 10px; /* Add spacing between the SVG and text */
+}
+
+.modal-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+.modal-content input {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d44;
+  color: #f0f0f5;
+  font-size: 0.95rem;
+  margin-right: 0; 
+}
+
+.modal-content input:focus {
+  background: #3a3a5a;
+  border: 1px solid #ffcc00; 
+}
+
+.save-btn, .cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+}
+
+.cancel-btn {
+  background: #444;
+  color: #fff;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+.cancel-btn:hover {
+  background: #555;
+}
